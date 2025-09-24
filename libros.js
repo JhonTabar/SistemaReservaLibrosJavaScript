@@ -23,7 +23,7 @@ function mostrarLibros() {
 
 
         if (libro.reservadoPor) {
-            li.textContent += " ✅ Reservado por: " + libro.reservadoPor;
+            li.textContent += "Reservado por: " + libro.reservadoPor;
         } else {
 
             let boton = document.createElement("button");
@@ -47,8 +47,7 @@ function reservarLibro(libro) {
     libro.reservadoPor = usuarioActivo;
 
 
-    mensajeReserva.style.color = "green";
-    mensajeReserva.textContent = "📚 Has reservado: " + libro.titulo;
+    mensajeReserva.textContent = "Has reservado: " + libro.titulo;
 
 
     console.log("El usuario \"" + usuarioActivo + "\" reservó el libro: " + libro.titulo);
