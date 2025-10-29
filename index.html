@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Login - Biblioteca</title>
-  <link rel="stylesheet" href="Styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Formulario de Registro</title>
+
 </head>
+
 <body>
-  <div class="login-container">
-    <h2>Inicio de Sesión</h2>
-    <form id="loginForm">
-      <div class="input-group">
-        <label for="usuario">Usuario</label>
-        <input type="text" id="usuario" placeholder="Ingrese su usuario">
-      </div>
-      <div class="input-group">
-        <label for="clave">Contraseña</label>
-        <input type="password" id="clave" placeholder="Ingrese su contraseña">
-      </div>
-      <button type="submit">Ingresar</button>
-    </form>
-    <p id="mensaje"></p>
-  </div>
-  <script src="login.js"></script>
+    <div class="capa-uno"></div>
+    <div class="capa-dos"></div>
+    <div class="capa-tres"></div>
+    
+    <form id="formulario" class="formulario">
+        <h2 class="formulario__titulo">Registro</h2>
+        <span id="error"></span>
+
+        <div class="formulario__grupo">
+            <label class="formulario__etiqueta" for="usuario">Usuario</label>
+            <input class="formulario__entrada" type="text" id="usuario" name="usuario">
+        </div>
+
+        <div class="formulario__grupo">
+            <label class="formulario__etiqueta" for="contrasena">Contraseña</label>
+            <input class="formulario__entrada" type="text" id="contrasena" name="contrasena">
+        </div>
+
+        <div class="formulario__grupo">
+            <label class="formulario__etiqueta" for="role">Role</label>
+            <input class="formulario__entrada" type="tel" id="role" name="role">
+        </div>
+
+
+        <button id="btnLogin" class="formulario__boton" type="submit">Registrar</button>
+        </form>
+        <script type="module" src="/login.js"></script>
+        <script type="module" src="controllers/logincontroller.js"></script>
 </body>
+
 </html>

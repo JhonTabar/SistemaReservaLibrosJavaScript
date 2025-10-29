@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de Administración</title>
+  <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+  <h1>Búsqueda de Reservas</h1>
+
+  <div class="buscador">
+    <input type="text" id="inputBusqueda" placeholder="Ingrese ID de usuario o libro">
+    <button id="btnBuscar">Buscar</button>
+  </div>
+
+  <div id="resultado"></div>
+
+  <script type="module" src="/models/usuarios.js"></script>
+  <script type="module" src="/controllers/admintcontroller.js"></script>
+</body>
+</html>
